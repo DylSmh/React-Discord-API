@@ -12,11 +12,11 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
 
--- Dumping database structure for heroku_7697c875dc5b5f3
-CREATE DATABASE IF NOT EXISTS `heroku_7697c875dc5b5f3` /*!40100 DEFAULT CHARACTER SET utf8 */;
-USE `heroku_7697c875dc5b5f3`;
+-- Dumping database structure for heroku_7697c875dc5b5f34
+CREATE DATABASE IF NOT EXISTS `heroku_7697c875dc5b5f34` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `heroku_7697c875dc5b5f34`;
 
--- Dumping structure for table heroku_7697c875dc5b5f3.channels
+-- Dumping structure for table heroku_7697c875dc5b5f34.channels
 CREATE TABLE IF NOT EXISTS `channels` (
   `channel_id` varchar(50) DEFAULT NULL,
   `channel_name` varchar(50) DEFAULT NULL,
@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS `channels` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- Data exporting was unselected.
--- Dumping structure for table heroku_7697c875dc5b5f3.messages
+-- Dumping structure for table heroku_7697c875dc5b5f34.messages
 CREATE TABLE IF NOT EXISTS `messages` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `channel_id` varchar(50) DEFAULT NULL,
@@ -35,14 +35,14 @@ CREATE TABLE IF NOT EXISTS `messages` (
 ) ENGINE=InnoDB AUTO_INCREMENT=12012 DEFAULT CHARSET=utf8;
 
 -- Data exporting was unselected.
--- Dumping structure for table heroku_7697c875dc5b5f3.serveradmins
+-- Dumping structure for table heroku_7697c875dc5b5f34.serveradmins
 CREATE TABLE IF NOT EXISTS `serveradmins` (
   `server_id` varchar(50) DEFAULT NULL,
   `user_id` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- Data exporting was unselected.
--- Dumping structure for table heroku_7697c875dc5b5f3.servers
+-- Dumping structure for table heroku_7697c875dc5b5f34.servers
 CREATE TABLE IF NOT EXISTS `servers` (
   `server_id` varchar(50) NOT NULL,
   `server_name` varchar(50) NOT NULL,
@@ -50,7 +50,7 @@ CREATE TABLE IF NOT EXISTS `servers` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- Data exporting was unselected.
--- Dumping structure for table heroku_7697c875dc5b5f3.users
+-- Dumping structure for table heroku_7697c875dc5b5f34.users
 CREATE TABLE IF NOT EXISTS `users` (
   `user_id` varchar(50) NOT NULL,
   `user_name` varchar(45) DEFAULT NULL,
@@ -60,14 +60,14 @@ CREATE TABLE IF NOT EXISTS `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- Data exporting was unselected.
--- Dumping structure for table heroku_7697c875dc5b5f3.userservers
+-- Dumping structure for table heroku_7697c875dc5b5f34.userservers
 CREATE TABLE IF NOT EXISTS `userservers` (
   `user_id` varchar(50) DEFAULT NULL,
   `server_id` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- Data exporting was unselected.
--- Dumping structure for table heroku_7697c875dc5b5f3.user_messages
+-- Dumping structure for table heroku_7697c875dc5b5f34.user_messages
 CREATE TABLE IF NOT EXISTS `user_messages` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `user_from` varchar(50) DEFAULT NULL,
